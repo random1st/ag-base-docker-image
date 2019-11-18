@@ -12,4 +12,5 @@ ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
 ENV TMPDIR /var/tmp
 
+RUN pip install --upgrade pip && pip install --upgrade setuptools
 RUN pip install gunicorn==19.9.0
